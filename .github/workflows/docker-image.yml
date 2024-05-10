@@ -17,7 +17,7 @@ jobs:
         docker compose -f compose.yaml up --exid-code-from test_login_page || true
     - name: Report
       run: | 
-        sudo docker compose run ci-cd bin/sh -c "allure generate allure-results"   
+        sudo docker compose run test bin/sh -c "allure generate allure-results"   
     - name: Publish test report
       uses: peaceiris/actions-gh-pages@v3
       with:
