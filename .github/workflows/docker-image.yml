@@ -13,6 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker compose -f compose.yaml up -d
-    - name: Run tests
-      run: pytest -s -v --alluredir allure-results tests/test_login.py
+      run: | 
+        docker compose -f compose.yaml up -d
+        sh
+        -c
+        pytest -s -v --alluredir allure-results tests/test_login.py
