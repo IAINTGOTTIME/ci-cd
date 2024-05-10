@@ -48,7 +48,8 @@ class TestLoginPage:
     ])
     def test_login_page_invalid_credentials(self, username, password, browser):
         """
-        (invalid login) or (invalid pass)
+        (invalid login)
+        (invalid pass)
         """
 
         page = LoginPage(browser)

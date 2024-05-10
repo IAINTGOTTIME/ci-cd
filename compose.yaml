@@ -1,6 +1,12 @@
-version: "*"
+version: "3.12"
 services:
   test:
-    container_name: test
     build:
       dockerfile: Dockerfile
+    container_name: test_login_page
+    volumes:
+      - ./:/tests
+    environment:
+      - LOGIN=${LOGIN}
+      - PASSWORD=${PASSWORD}
+    working_dir: /tests
