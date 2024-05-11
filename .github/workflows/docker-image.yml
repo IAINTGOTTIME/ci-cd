@@ -18,10 +18,10 @@ jobs:
     - name: Report
       run: | 
         sudo docker compose run test /bin/sh -c "allure generate allure-results"   
-    - name: Publish test report
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.TOKEN }}
-        publish_branch: gh-pages
-        publish_dir: allure-report
-        clean: true
+    # - name: Publish test report
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.TOKEN }}
+    #     publish_branch: gh-pages
+    #     publish_dir: allure-report
+    #     clean: true
