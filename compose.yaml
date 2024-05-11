@@ -6,7 +6,6 @@ services:
     container_name: test_login_page
     volumes:
       - ./:/tests
-    command: /bin/sh -c "pytest -s -v --alluredir=allure-result tests/test_login.py"
     environment:
       - LOGIN=${LOGIN}
       - PASSWORD=${PASSWORD}
