@@ -30,4 +30,6 @@ RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy --system
 
 ENV PATH="/.venv/bin:$PATH"
 
-CMD ["sh", "-c", "pytest -s -v --alluredir=allure-result test_login.py"]
+RUN pytest -s -v --alluredir=allure-result test_login.py
+
+#CMD ["sh", "-c", "pytest -s -v --alluredir=allure-result test_login.py"]
