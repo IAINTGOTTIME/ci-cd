@@ -1,35 +1,35 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat May 11 16:27:06 GMT 2024","Sat May 11 16:27:10 GMT 2024","3447","tests","test_login","TestLoginPage","","","input invalid credentials","
-        (invalid login)
-        (invalid pass)
-        "
-"passed","Sat May 11 16:27:17 GMT 2024","Sat May 11 16:27:19 GMT 2024","2104","tests","test_login","TestLoginPage","","","input empty credentials","
+"passed","Sat May 11 16:33:12 GMT 2024","Sat May 11 16:33:15 GMT 2024","2535","tests","test_login","TestLoginPage","","","input empty credentials","
         (empty login)
         (empty pass)
         (empty login and pass)
         "
-"passed","Sat May 11 16:27:14 GMT 2024","Sat May 11 16:27:16 GMT 2024","2235","tests","test_login","TestLoginPage","","","input empty credentials","
+"passed","Sat May 11 16:33:21 GMT 2024","Sat May 11 16:33:23 GMT 2024","2514","tests","test_login","TestLoginPage","","","input empty credentials","
         (empty login)
         (empty pass)
         (empty login and pass)
         "
-"passed","Sat May 11 16:27:02 GMT 2024","Sat May 11 16:27:06 GMT 2024","3751","tests","test_login","TestLoginPage","","","input invalid credentials","
-        (invalid login)
-        (invalid pass)
-        "
-"passed","Sat May 11 16:26:59 GMT 2024","Sat May 11 16:27:02 GMT 2024","3026","tests","test_login","TestLoginPage","","","input valid login and password","
+"passed","Sat May 11 16:32:56 GMT 2024","Sat May 11 16:33:00 GMT 2024","3463","tests","test_login","TestLoginPage","","","input valid login and password","
         (valid login and pass)
         "
-"passed","Sat May 11 16:27:21 GMT 2024","Sat May 11 16:27:24 GMT 2024","2087","tests","test_login","TestLoginPage","","","input empty credentials","
+"passed","Sat May 11 16:33:04 GMT 2024","Sat May 11 16:33:08 GMT 2024","3884","tests","test_login","TestLoginPage","","","input invalid credentials","
+        (invalid login)
+        (invalid pass)
+        "
+"passed","Sat May 11 16:33:08 GMT 2024","Sat May 11 16:33:12 GMT 2024","3504","tests","test_login","TestLoginPage","","","input invalid credentials","
+        (invalid login)
+        (invalid pass)
+        "
+"passed","Sat May 11 16:33:00 GMT 2024","Sat May 11 16:33:04 GMT 2024","3495","tests","test_login","TestLoginPage","","","input invalid credentials","
+        (invalid login)
+        (invalid pass)
+        "
+"passed","Sat May 11 16:33:18 GMT 2024","Sat May 11 16:33:21 GMT 2024","2452","tests","test_login","TestLoginPage","","","input empty credentials","
         (empty login)
         (empty pass)
         (empty login and pass)
         "
-"passed","Sat May 11 16:27:10 GMT 2024","Sat May 11 16:27:14 GMT 2024","3371","tests","test_login","TestLoginPage","","","input invalid credentials","
-        (invalid login)
-        (invalid pass)
-        "
-"passed","Sat May 11 16:27:19 GMT 2024","Sat May 11 16:27:21 GMT 2024","2043","tests","test_login","TestLoginPage","","","input empty credentials","
+"passed","Sat May 11 16:33:15 GMT 2024","Sat May 11 16:33:18 GMT 2024","2486","tests","test_login","TestLoginPage","","","input empty credentials","
         (empty login)
         (empty pass)
         (empty login and pass)
