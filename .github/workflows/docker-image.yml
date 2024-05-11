@@ -1,0 +1,27 @@
+name: Docker Image CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: | 
+        docker compose -f compose.yaml up --exid-code-from test_login_page || true
+    - name: Report
+      run: | 
+        sudo docker compose run test /bin/sh -c "allure generate allure-results"   
+    - name: Publish test report
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: allure-report
+        clean: true
