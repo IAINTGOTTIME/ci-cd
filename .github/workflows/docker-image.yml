@@ -16,16 +16,17 @@ jobs:
     - name: Build the Docker image
       run: | 
         docker compose -f compose.yaml up --exit-code-from test || true
-    - name: Report
-      run: | 
-        sudo docker compose run test /bin/sh -c "allure generate allure-results --clean -o allure-report"
     - name: Copy report history 
       run: |
         sudo mkdir allure-results/history
         sudo cp -R path: ./.github/gh-pages/history/* allure-results/history/
+    - name: Report
+      run: | 
+        sudo docker compose run test /bin/sh -c "allure generate allure-results --clean -o allure-report"
     - name: Publish test report
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.TOKEN }}
         publish_branch: gh-pages
         publish_dir: allure-report
+        clean: true
