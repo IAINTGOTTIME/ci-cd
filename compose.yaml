@@ -3,7 +3,6 @@ services:
   test:
     build:
       dockerfile: Dockerfile
-    container_name: test_login_page
     volumes:
       - ./:/tests
     environment:

@@ -6,10 +6,10 @@ RUN addgroup -S app && adduser -S -G app app
 
 RUN pip install pipenv
 
-RUN apk update | \
+RUN apk update && \
     apk add --no-cache chromium chromium-chromedriver tzdata
 
-RUN apk update | \
+RUN apk update && \
     apk --no-cache add openjdk21
 
 RUN apk --no-cache add curl
