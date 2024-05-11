@@ -18,7 +18,7 @@ jobs:
         docker compose -f compose.yaml up --exit-code-from test || true
     - name: Copy report history 
       run: |
-        sudo mkdir allure-results/history
+        sudo mkdir -p allure-results/history
         sudo cp -R path: ./.github/gh-pages/history/* allure-results/history/
     - name: Report
       run: | 
