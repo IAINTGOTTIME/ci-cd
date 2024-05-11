@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Test login page
 
 on:
   workflow_dispatch:
