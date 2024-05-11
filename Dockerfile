@@ -10,19 +10,14 @@ RUN apk update && \
     apk add --no-cache chromium chromium-chromedriver tzdata
 
 RUN apk update && \
-    apk --no-cache add openjdk21
+    apk --no-cache add openjdk21 && \
+    apk --no-cache add curl && \
+    apk --no-cache add tar
 
-RUN apk --no-cache add curl
-
-RUN apk --no-cache add tar
-
-RUN curl -o allure-2.29.0.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.29.0/allure-commandline-2.29.0.tgz
-
-RUN tar -zxvf allure-2.29.0.tgz -C /opt/
-
-RUN ln -s /opt/allure-2.29.0/bin/allure /usr/bin/allure
-
-RUN allure --version
+RUN curl -o allure-2.29.0.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.29.0/allure-commandline-2.29.0.tgz && \
+    tar -zxvf allure-2.29.0.tgz -C /opt/ && \
+    ln -s /opt/allure-2.29.0/bin/allure /usr/bin/allure && \
+    allure --version
 
 COPY . .
 
