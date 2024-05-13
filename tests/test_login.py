@@ -42,8 +42,8 @@ class TestLoginPage:
     @allure.severity("Critical")
     @pytest.mark.negative
     @pytest.mark.parametrize("username, password", [
-        ("huesos", UserData.PASSWORD),
-        (UserData.LOGIN, "huesos228"),
+        ("notime", UserData.PASSWORD),
+        (UserData.LOGIN, "notime123"),
         ("azqxsw", "qsxfvqgb"),
     ])
     def test_login_page_invalid_credentials(self, username, password, browser):
